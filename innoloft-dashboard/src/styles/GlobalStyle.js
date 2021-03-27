@@ -26,6 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Rubik;
     font-weight: normal;
     font-style: normal;
+    overflow-x: hidden;
   }
 
   ::-webkit-scrollbar {
