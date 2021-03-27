@@ -23,6 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background-color: white;
     width: 100vw;
+    font-family: Rubik;
     font-weight: normal;
     font-style: normal;
   }
