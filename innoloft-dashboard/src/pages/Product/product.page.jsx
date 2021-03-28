@@ -33,10 +33,9 @@ function ProductPage() {
     type,
     user,
     company,
+    trl
   } = product;
-  const { address } = company || {};
-
-  // const desc = {__html: description}
+  const { address, ...props } = company || {};
 
   return loading || hasErrors ? (
     <Loader />
@@ -56,7 +55,7 @@ function ProductPage() {
               DESCRIPTION
             </TabSpan>
             <TabSpan
-              active={tab === "attr" ? 1 : 0}
+              active={tab === "desc" ? 0 : 1}
               onClick={() => setTab("attr")}
             >
               ATTRIBUTES
@@ -68,12 +67,12 @@ function ProductPage() {
             </DetailCOntainer>
           ) : (
             <DetailCOntainer>
-              <Attributes />
+              <Attributes trl={trl} />
             </DetailCOntainer>
           )}
         </ProductContent>
         <UserContent>
-          <UserInfo user={user} />
+          <UserInfo user={user} props={props} />
           <Map address={address} />
         </UserContent>
       </PContent>
