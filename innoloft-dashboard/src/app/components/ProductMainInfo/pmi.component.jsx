@@ -1,7 +1,6 @@
 import { PMIStyle } from "./pmi.styles";
 
 function PMI({ name, investmentEffort, type }) {
-  console.log(name, investmentEffort, type);
   return (
     <PMIStyle>
       <div className="title">
