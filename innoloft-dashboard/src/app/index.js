@@ -19,6 +19,11 @@ const Content = styled.div`
   width: calc(100% - 225px);
   min-height: calc(100% - 55px);
   margin-left: 225px;
+
+  @media (max-width: 700px) {
+    margin-left: 0;
+    width: 100%;
+  }
 `;
 
 const SidebarStyle = styled.div`
@@ -29,6 +34,10 @@ const SidebarStyle = styled.div`
   height: calc(100vh - 55px);
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
   position: fixed;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
 
 function App() {

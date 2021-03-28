@@ -72,7 +72,7 @@ function ProductPage() {
           )}
         </ProductContent>
         <UserContent>
-          <UserInfo user={user} props={props} />
+          <UserInfo className="userinfo" user={user} props={props} />
           <Map address={address} />
         </UserContent>
       </PContent>

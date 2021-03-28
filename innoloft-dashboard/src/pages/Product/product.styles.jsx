@@ -13,6 +13,10 @@ export const PContent = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  @media (max-width:1280px) {
+    flex-direction: column;
+  }
 `;
 
 export const ProductContent = styled.div`
@@ -25,6 +29,10 @@ export const ProductContent = styled.div`
     height: 250px;
     border-radius: 5px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width:1280px) {
+    width: 100%;
   }
 `;
 
@@ -58,10 +66,22 @@ export const DetailCOntainer = styled.div`
   display: grid;
   place-items: center;
   border: 1px solid rgba(0,0,0,0.1);
+
+  @media (max-width:1280px) {
+    height: 500px;
+  }
 `;
 
 export const UserContent = styled.div`
   width: 30%;
   display: flex;
   flex-direction: column;
+
+  @media (max-width:1280px) {
+    width: 100%;
+
+    .userinfo {
+      margin: 10px;
+    }
+  }
 `;
