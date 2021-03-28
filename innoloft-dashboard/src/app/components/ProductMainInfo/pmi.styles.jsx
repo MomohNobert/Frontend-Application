@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const PMIStyle = styled.div`
   width: 100%;
   height: 75px;
-  margin-top: 15px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
 

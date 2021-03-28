@@ -38,8 +38,8 @@ function ProductPage() {
     <PStyle>
       <PContent>
         <ProductContent>
-          <img src={picture} alt={name} />
           <PMI name={name} investmentEffort={investmentEffort} type={type} />
+          <img src={picture} alt={name} />
           <TabMenu>
             <TabSpan
               active={tab === "desc" ? 1 : 0}
