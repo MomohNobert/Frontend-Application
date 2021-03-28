@@ -1,5 +1,5 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const P = styled.p`
-    width: 90%
-`
+  width: 90%;
+`;

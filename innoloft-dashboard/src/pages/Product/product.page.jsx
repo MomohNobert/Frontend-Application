@@ -25,8 +25,16 @@ function ProductPage() {
   }, [dispatch]);
 
   const { loading, hasErrors, product } = useSelector(productSelector);
-  const { picture, name, description, investmentEffort, type, user, company } = product;
-  const { address } = company || {}
+  const {
+    picture,
+    name,
+    description,
+    investmentEffort,
+    type,
+    user,
+    company,
+  } = product;
+  const { address } = company || {};
 
   // const desc = {__html: description}
 
