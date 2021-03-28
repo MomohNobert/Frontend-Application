@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import Attributes from "../../app/components/Attributes/attributes.component";
 import Description from "../../app/components/Description/description.component";
 import Loader from "../../app/components/Loader/loader.component";
+import Map from "../../app/components/Map/map.component";
 import PMI from "../../app/components/ProductMainInfo/pmi.component";
+import UserInfo from "../../app/components/UserInfo/userInfo.component";
 import { fetchProduct, productSelector } from "./product.slice";
 import {
   PContent,
@@ -65,7 +67,10 @@ function ProductPage() {
             </DetailCOntainer>
           )}
         </ProductContent>
-        <UserContent></UserContent>
+        <UserContent>
+          <UserInfo />
+          <Map />
+        </UserContent>
       </PContent>
     </PStyle>
   );

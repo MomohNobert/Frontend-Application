@@ -16,7 +16,7 @@ export const PContent = styled.div`
 `;
 
 export const ProductContent = styled.div`
-  width: 60%;
+  width: 65%;
   display: flex;
   flex-direction: column;
 
@@ -35,6 +35,8 @@ export const TabMenu = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+  border-radius: 5px 5px 0px 0px;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 `;
 
@@ -58,7 +60,7 @@ export const DetailCOntainer = styled.div`
 `;
 
 export const UserContent = styled.div`
-  width: 35%;
+  width: 30%;
   display: flex;
   flex-direction: column;
 `;
