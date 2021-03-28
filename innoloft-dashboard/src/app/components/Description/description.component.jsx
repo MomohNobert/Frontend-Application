@@ -1,7 +1,5 @@
 function Description() {
-    return (
-        <p>Description</p>
-    )
+  return <p>Description</p>;
 }
 
-export default Description
+export default Description;

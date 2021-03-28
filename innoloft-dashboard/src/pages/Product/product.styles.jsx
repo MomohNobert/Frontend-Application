@@ -1,63 +1,64 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const PStyle = styled.div`
-    width: 100%;
-    display: grid;
-    height: 100%;
-    place-items: center;
-`
+  width: 100%;
+  display: grid;
+  height: 100%;
+  place-items: center;
+`;
 
 export const PContent = styled.div`
-    width: 90%;
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-`
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+`;
 
 export const ProductContent = styled.div`
-    width: 60%;
-    display: flex;
-    flex-direction: column;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
 
-    img {
-        width: 100%;
-        height: 250px;
-        border-radius: 5px;
-        box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
-    }
-`
+  img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  }
+`;
 
 export const TabMenu = styled.div`
-    height: 25px;
-    width: 100%;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
-`
+  height: 25px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+`;
 
 export const TabSpan = styled.span`
-    width: 50%;
-    text-align: center;
-    display: grid;
-    place-items: center;
-    transition: all 0.25s linear;
-    color: ${(active) => active ? "white" : "black"};
-    background-color: ${(active) => active ? "rgba(39, 46, 113, 1)" : "rgba(39, 46, 113, 0.1)"};
-    height: 100%;
-    cursor: pointer;
-`
+  width: 50%;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  transition: all 0.25s linear;
+  color: ${(active) => (active ? "white" : "black")};
+  background-color: ${(active) =>
+    active ? "rgba(39, 46, 113, 1)" : "rgba(39, 46, 113, 0.1)"};
+  height: 100%;
+  cursor: pointer;
+`;
 
 export const DetailCOntainer = styled.div`
-    width: 100%;
-    height: 275px;
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
-`
+  width: 100%;
+  height: 275px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+`;
 
 export const UserContent = styled.div`
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-`
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+`;

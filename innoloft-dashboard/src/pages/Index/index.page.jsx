@@ -1,11 +1,11 @@
-import { IPSTyle } from "./index.styles"
+import { IPSTyle } from "./index.styles";
 
 function IndexPage() {
-    return (
-        <IPSTyle>
-            <p>No content available at the moment. 😅</p>
-        </IPSTyle>
-    )
+  return (
+    <IPSTyle>
+      <p>No content available at the moment. 😅</p>
+    </IPSTyle>
+  );
 }
 
-export default IndexPage
+export default IndexPage;

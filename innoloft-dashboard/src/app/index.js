@@ -1,25 +1,25 @@
-import styled from 'styled-components';
-import Header from '../shared/Header/header.component';
-import Sidebar from '../shared/Sidebar/sidebar.component';
-import {GlobalStyle} from '../styles/GlobalStyle';
-import { Switch, BrowserRouter, Route } from 'react-router-dom';
-import ProductPage from '../pages/Product/product.page';
-import IndexPage from '../pages/Index/index.page';
+import styled from "styled-components";
+import Header from "../shared/Header/header.component";
+import Sidebar from "../shared/Sidebar/sidebar.component";
+import { GlobalStyle } from "../styles/GlobalStyle";
+import { Switch, BrowserRouter, Route } from "react-router-dom";
+import ProductPage from "../pages/Product/product.page";
+import IndexPage from "../pages/Index/index.page";
 
 const HeaderStyle = styled.header`
   height: 55px;
   width: 100%;
   position: fixed;
   top: 0;
-  box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
-`
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+`;
 
 const Content = styled.div`
   margin-top: 55px;
   width: calc(100% - 225px);
   min-height: calc(100% - 55px);
   margin-left: 225px;
-`
+`;
 
 const SidebarStyle = styled.div`
   width: 225px;
@@ -27,9 +27,9 @@ const SidebarStyle = styled.div`
   left: 0;
   top: 0;
   height: calc(100vh - 55px);
-  box-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
   position: fixed;
-`
+`;
 
 function App() {
   return (

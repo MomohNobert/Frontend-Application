@@ -1,7 +1,5 @@
 function Attributes() {
-    return (
-        <p>Attributes</p>
-    )
+  return <p>Attributes</p>;
 }
 
-export default Attributes
+export default Attributes;

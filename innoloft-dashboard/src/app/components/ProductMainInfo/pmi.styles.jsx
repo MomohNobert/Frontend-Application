@@ -1,23 +1,23 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const PMIStyle = styled.div`
-    width: 100%;
-    height: 75px;
-    margin-top: 15px;
+  width: 100%;
+  height: 75px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+
+  .title {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin-right: 50px;
 
-    .title {
-        display: flex;
-        flex-direction: column;
-        margin-right: 50px;
-
-        span {
-            font-size: 15px;
-        }
+    span {
+      font-size: 15px;
     }
+  }
 
-    h3 {
-        color: green;
-    }
-`
+  h3 {
+    color: green;
+  }
+`;
