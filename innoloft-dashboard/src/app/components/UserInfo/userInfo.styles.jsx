@@ -20,4 +20,8 @@ export const UIStyle = styled.div`
     font-weight: bold;
     padding: 10px;
   }
+
+  .email {
+    padding: 10px;
+  }
 `;
