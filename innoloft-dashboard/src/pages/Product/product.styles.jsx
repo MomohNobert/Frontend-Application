@@ -24,12 +24,36 @@ export const ProductContent = styled.div`
         width: 100%;
         height: 250px;
         border-radius: 5px;
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
     }
+`
 
-    p {
-        margin-top: 25px;
-        font-size: 15px;
-    }
+export const TabMenu = styled.div`
+    height: 25px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+`
+
+export const TabSpan = styled.span`
+    width: 50%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    transition: all 0.25s linear;
+    color: ${(active) => active ? "white" : "black"};
+    background-color: ${(active) => active ? "rgba(39, 46, 113, 1)" : "rgba(39, 46, 113, 0.1)"};
+    height: 100%;
+    cursor: pointer;
+`
+
+export const DetailCOntainer = styled.div`
+    width: 100%;
+    height: 275px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
 `
 
 export const UserContent = styled.div`
