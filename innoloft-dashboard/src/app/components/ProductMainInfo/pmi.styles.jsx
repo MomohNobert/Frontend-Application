@@ -10,7 +10,7 @@ export const PMIStyle = styled.div`
   .title {
     display: flex;
     flex-direction: column;
-    margin-right: 50px;
+    margin-right: 25px;
 
     span {
       font-size: 15px;
