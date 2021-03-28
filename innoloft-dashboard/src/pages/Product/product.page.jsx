@@ -24,11 +24,9 @@ function ProductPage() {
     dispatch(fetchProduct());
   }, [dispatch]);
 
-  console.log(tab);
-
   const { loading, hasErrors, product } = useSelector(productSelector);
-  const { picture, name, description, investmentEffort, type } = product;
-  console.log(product);
+  const { picture, name, description, investmentEffort, type, user, company } = product;
+  const { address } = company || {}
 
   // const desc = {__html: description}
 
@@ -42,7 +40,6 @@ function ProductPage() {
         <ProductContent>
           <img src={picture} alt={name} />
           <PMI name={name} investmentEffort={investmentEffort} type={type} />
-          {/* <p dangerouslySetInnerHTML={desc} /> */}
           <TabMenu>
             <TabSpan
               active={tab === "desc" ? 1 : 0}
@@ -59,7 +56,7 @@ function ProductPage() {
           </TabMenu>
           {tab === "desc" ? (
             <DetailCOntainer>
-              <Description />
+              <Description description={description} />
             </DetailCOntainer>
           ) : (
             <DetailCOntainer>
@@ -68,8 +65,8 @@ function ProductPage() {
           )}
         </ProductContent>
         <UserContent>
-          <UserInfo />
-          <Map />
+          <UserInfo user={user} />
+          <Map address={address} />
         </UserContent>
       </PContent>
     </PStyle>
