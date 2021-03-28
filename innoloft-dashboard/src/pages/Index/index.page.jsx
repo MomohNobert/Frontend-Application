@@ -1,6 +1,10 @@
+import { IPSTyle } from "./index.styles"
+
 function IndexPage() {
     return (
-        <p>IndexPage</p>
+        <IPSTyle>
+            <p>No content available at the moment. 😅</p>
+        </IPSTyle>
     )
 }
 
