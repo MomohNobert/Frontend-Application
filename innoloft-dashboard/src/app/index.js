@@ -15,8 +15,9 @@ const HeaderStyle = styled.header`
 `
 
 const Content = styled.div`
-  margin-top: 75px;
+  margin-top: 55px;
   width: calc(100% - 225px);
+  min-height: calc(100% - 55px);
   margin-left: 225px;
 `
 
