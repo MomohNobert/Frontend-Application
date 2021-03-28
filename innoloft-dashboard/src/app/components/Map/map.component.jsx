@@ -17,7 +17,7 @@ function Map({ address }) {
         defaultCenter={props.center}
         defaultZoom={props.zoom}
       >
-        <AnyReactComponent lat={latitude} lng={longitude} text="My Marker" />
+        <AnyReactComponent lat={latitude} lng={longitude} text="📍" />
       </GoogleMapReact>
     </MStyle>
   );
